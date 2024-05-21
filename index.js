@@ -1,6 +1,13 @@
-let a = 0;
-let b = 9;
+let a = 2;
+let b = 98;
 
-for (a; a <= b; a++) {
-    console.log(a);
+for (let i = a; i <= b; i++) {
+   let fl = false;
+   for (let j = 2; j < i; j++) {
+    if(i % j === 0){
+        fl = true;
+        break;
+    }
+   }
+    if(!fl) console.log(i);
 }
